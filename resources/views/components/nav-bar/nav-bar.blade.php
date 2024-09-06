@@ -3,7 +3,9 @@
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <h1 class="font-serif text-xl font-bold neon text-teal-950">Laravel App</h1>
+                <a href="/" class="font-serif text-xl font-bold neon text-teal-950">
+                    Laravel App
+                </a>
             </div>
 
             <!-- Menu Links -->

@@ -1,4 +1,4 @@
-<div class="mt-6">
+<section class="mt-6">
     <div
         class="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-gray-800 backdrop-blur-md shadow-xl rounded-md font-[sans-serif]">
         <div>
@@ -67,4 +67,4 @@
                 class="text-white bg-teal-500 hover:bg-teal-600 rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
         </form>
     </div>
-</div>
+</section>

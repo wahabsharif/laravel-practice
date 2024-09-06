@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.neon {
+    color: #022c22; /* Your specified green color */
+    text-shadow: 0 0 5px #064e3b, /* Inner glow */ 0 0 10px #064e3b,
+        0 0 15px #064e3b, 0 0 20px #064e3b, 0 0 25px #064e3b, 0 0 30px #064e3b,
+        0 0 35px #064e3b;
+}

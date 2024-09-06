@@ -7,16 +7,15 @@
     <title>@yield('title', 'Default Title')</title>
     {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
     @vite('resources/css/app.css')
-
 </head>
 
-<body class="bg-emerald-900">
+<body class="flex flex-col min-h-screen bg-emerald-900">
 
     <header>
         <x-nav-bar.nav-bar />
     </header>
 
-    <main>
+    <main class="flex-grow p-10">
         @yield('content')
     </main>
 

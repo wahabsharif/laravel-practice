@@ -1,4 +1,4 @@
-<nav class="shadow-xl bg-white/30 backdrop-blur-lg">
+<nav class="fixed top-0 left-0 z-50 w-full shadow-xl bg-white/30 backdrop-blur-lg">
     <div class="px-4 mx-auto max-w-7xl">
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->

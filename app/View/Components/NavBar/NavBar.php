@@ -44,8 +44,8 @@ class NavBar extends Component
         return [
             ['name' => 'Home', 'url' => url('/'), 'active' => $this->isActive('/')],
             ['name' => 'About', 'url' => url('/about'), 'active' => $this->isActive('/about')],
-            ['name' => 'Services', 'url' => url('/'), 'active' => $this->isActive('/services')],
-            ['name' => 'Contact', 'url' => url('/'), 'active' => $this->isActive('/contact')],
+            ['name' => 'Services', 'url' => url('/services'), 'active' => $this->isActive('/services')],
+            ['name' => 'Contact', 'url' => url('/contact'), 'active' => $this->isActive('/contact')],
         ];
     }
 

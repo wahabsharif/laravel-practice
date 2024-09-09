@@ -54,17 +54,26 @@
             </div>
         </div>
 
-        <form class="ml-auto space-y-4">
-            <input type='text' placeholder='Name'
+        <form action="{{ route('contact.store') }}" method="POST" class="ml-auto space-y-4">
+            @csrf
+            <input type='text' name='name' placeholder='Name'
                 class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-teal-500" />
-            <input type='email' placeholder='Email'
+            <input type='email' name='email' placeholder='Email'
                 class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-teal-500" />
-            <input type='text' placeholder='Subject'
+            <input type='text' name='subject' placeholder='Subject'
                 class="w-full text-gray-800 rounded-md py-2.5 px-4 border text-sm outline-teal-500" />
-            <textarea placeholder='Message' rows="6"
+            <textarea name='message' placeholder='Message' rows="6"
                 class="w-full text-gray-800 rounded-md px-4 border text-sm pt-2.5 outline-teal-500"></textarea>
-            <button type='button'
+            <button type='submit'
                 class="text-white bg-teal-500 hover:bg-teal-600 rounded-md text-sm px-4 py-3 w-full !mt-6">Send</button>
         </form>
+
     </div>
 </section>
+
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
